@@ -23,6 +23,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <title>Rita - It's your data, own it.</title>
 </head>
 
@@ -134,8 +135,8 @@
 
     <div class="header-content">
       <div class="header-content-title">
-        <h1>Privacy Policy</h1>
-        <p class="p-20-400">We have been working hard on making an understandable and transparent privacy policy for Rita.Please reach out if there’s anything that is lacking clarity or you wish to improve.</p>
+        <h1 data-aos="fade-in" data-aos-duration="1000">Privacy Policy</h1>
+        <p class="p-20-400" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1000">We have been working hard on making an understandable and transparent privacy policy for Rita.Please reach out if there’s anything that is lacking clarity or you wish to improve.</p>
       </div>
 
     </div>
@@ -149,7 +150,7 @@
 
   <section class="privacy-policy-sec">
     <div class="privacy-policy-container">
-      <div class="privacy-policy-container-left">
+      <div class="privacy-policy-container-left" data-aos="fade-right" data-aos-duration="1000">
         <a href="#protect" style="z-index: 10;" class="privacy-button active">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z" stroke="#FAF7F0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -283,7 +284,7 @@
         </a>
       </div>
 
-      <div class="privacy-policy-container-right">
+      <div class="privacy-policy-container-right" data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000">
         <h2 class="updated" style="z-index: 10;">updated on February 15 2021.</h2>
         <h1 class="heading" style="z-index: 10;">Privacy Policy for Rita Personal Data </h1>
         <p class="heading-text">At Rita Personal Data BV, accessible at Ritapersonaldata.com, our main priority is the privacy of our visitors. This Privacy Policy document outlines the types of information that is collected and recorded by Rita Personal Data, how we use it and why. Our mission at Rita is to put you at the centre of control over your personal data. This is why your data is stored on your local device (mobile phone).</p>
@@ -688,7 +689,12 @@
     }
   </script>
   <!-- Get Year Dynamically ends here -->
-
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<!-- AOS -->
 </body>
 
 </html>
