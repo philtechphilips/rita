@@ -253,6 +253,14 @@ p{
     width: 100%;
 }
 
+.privacy-policy-container-right h1{
+    text-align: center;
+}
+
+.privacy-policy-container-right h2{
+    text-align: center;
+}
+
 .shapes-bottom-left-privacy-terms{
     position: absolute;
     bottom: 40px;

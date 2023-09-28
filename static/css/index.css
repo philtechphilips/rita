@@ -154,6 +154,7 @@ ul {
     padding: 20px;
     position: relative;
     padding-bottom: 120px;
+    max-height: 1200px;
 }
 
 .navigation-bar {
