@@ -1,0 +1,242 @@
+.header-content h1 {
+    font-size: 70px !important;
+}
+
+.header-content p {
+    padding: 0 100px;
+}
+
+.bg-header-image-right,
+.bg-header-image-left {
+    width: 100px;
+}
+
+.hero-lines {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+}
+
+.privacy-policy-sec {
+    width: 100%;
+    background-color: var(--gray-background);
+    position: relative;
+}
+
+.privacy-policy-container {
+    padding: 80px 100px;
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+    
+}
+
+
+.privacy-policy-container-right {
+    width: 65%;
+}
+
+.privacy-policy-container-left {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 35%;
+}
+
+.privacy-button {
+    display: flex;
+    gap: 10px;
+    border: solid 1px var(--ligth-purple-color);
+    padding: 1px 30px;
+    border-radius: 50px;
+    width: 80%;
+}
+
+.privacy-button svg {
+    display: none;
+}
+
+.privacy-button p{
+    color: var(--ligth-purple-color) !important;
+}
+
+.privacy-button.active {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--ligth-purple-color);
+    color: #FFFFFF;
+    padding: 1px 30px;
+    border-radius: 50px;
+    width: 80%;
+}
+
+.privacy-button.active p{
+    color: #FFFFFF !important;
+}
+
+.privacy-button.active svg {
+    display: block;
+}
+.privacy-button.active img{
+    display: none;
+}
+
+
+.privacy-button:hover {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--ligth-purple-color);
+    color: #FFFFFF;
+    padding: 1px 30px;
+    border-radius: 50px;
+    width: 80%;
+    transition: .4s ease-in-out;
+}
+
+.privacy-button:hover p{
+    color: #FFFFFF !important;
+}
+
+.privacy-button:hover svg {
+    display: block;
+}
+.privacy-button:hover img{
+    display: none;
+}
+
+.privacy-policy-container-left p {
+    color: #FFFFFF;
+    font-family: "General Sans Medium";
+}
+
+.privacy-policy-container-left img {
+    fill: var(--ligth-purple-color) !important;
+}
+
+.privacy-policy-container-right .updated {
+    color: var(--ligth-purple-color);
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: "General Sans Medium";
+}
+
+
+.privacy-policy-container-right .heading {
+    color: var(--ligth-purple-color);
+    font-size: 40px;
+    font-family: "General Sans Semibold";
+}
+
+
+
+.privacy-policy-container-right .heading-text {
+    color: var(--ligth-purple-color);
+    font-size: 16px;
+}
+
+.policy-details-content {
+    border-top: solid 1px #FFE1E1;
+    padding: 10px 0;
+}
+
+.policy-details-content-heading {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.policy-details-content-heading img {
+    padding: 10px;
+    border: solid 1px var(--ligth-purple-color);
+    border-radius: 50px;
+}
+
+.policy-details-content-heading h1 {
+    color: var(--ligth-purple-color);
+}
+
+.policy-details-content-body{
+    padding-left: 60px;
+}
+
+.policy-details-content-body p{
+    color: #49454A;
+}
+
+.policy-terms li{
+    display: flex;
+    gap: 10px;
+    margin-top: -10px !important;
+    margin-left: -30px;
+}
+
+.policy-terms li img{
+    align-items: flex-start;
+}
+
+.policy-terms-sub-heading{
+    color: #49454A;
+    font-family: "General Sans Medium";
+}
+
+.shapes-bottom-left-privacy-terms{
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+}
+
+.ellipse-top-privacy-terms{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    z-index: 0;
+}
+
+.star-bottom-rigt-privacy-terms{
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+}
+
+@media (max-width: 900px) {
+    .privacy-policy-container {
+        padding: 80px 20px !important;
+    }
+
+    
+    .header-content p {
+        padding: 0 0px;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .header-content h1 {
+        font-size: 50px !important;
+    }
+
+    .header-content p {
+        padding: 0 0px;
+    }
+
+    
+.privacy-policy-container {
+    padding: 80px 20px;
+    display: flex;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+.privacy-policy-container-left {
+    width: 35%;
+    display: none;
+}
+
+.privacy-policy-container-right {
+    width: 100%;
+}
+
+}
