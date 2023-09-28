@@ -154,7 +154,6 @@ ul {
     padding: 20px;
     position: relative;
     padding-bottom: 120px;
-    max-height: 1200px;
 }
 
 .navigation-bar {
@@ -1287,6 +1286,10 @@ ul {
         font-weight: 500;
     }
 
+    .mobile-navigation-bar-links-nav-links .nav-links-item a:hover {
+        color: #E7EAEC !important;
+    }
+
     .mobile-navigation-bar-links-get-the-rita-extension {
         display: flex;
         align-items: center;
@@ -1498,6 +1501,7 @@ ul {
     .header-content-title h1 {
         font-size: 40px;
         font-weight: 600;
+        height: 100px !important;
     }
 
     .header-content-title p {
