@@ -1474,18 +1474,12 @@ ul {
 
 @media (max-width: 640px) {
     .product-hunt {
-        width: 300px !important;
+        width: 250px !important;
     }
 
-
-
-    /* .bg-header-image-right {
-        display: none !important;
+    .product-hunt-left img{
+        width: 40px;
     }
-
-    .bg-header-image-left {
-        display: none !important;
-    } */
 
     .bg-header-image-bottom {
         display: none;
@@ -1502,11 +1496,30 @@ ul {
         font-size: 40px;
         font-weight: 600;
         height: 100px !important;
+        display: none;
     }
+
+    .header-content-title h2 {
+        display: block !important;
+        font-size: 40px;
+        font-weight: 600;
+        font-family: "General Sans Medium";
+        text-align: center;
+        color: var(--ligth-purple-color);
+    }
+
 
     .header-content-title p {
         margin-top: -10px;
         padding: 0 0px;
+        display: none;
+    }
+
+    .header-content-title .mobile-text{
+        display: block !important;
+        font-size: 18px !important;
+        color: #503658;
+        padding: 0 20px;
     }
 
     .header-content-button {
@@ -1525,6 +1538,11 @@ ul {
 
     .header-content-button-mobile p{
         color: var(--ligth-purple-color);
+        font-size: 18px !important;
+    }
+
+    .product-hunt-right-red{
+        font-size: 16px;
     }
 
     .rita-in-your-hands {
@@ -1533,7 +1551,7 @@ ul {
         display: flex;
         align-items: center;
         justify-content: center;
-        flex-direction: column;
+        flex-direction: column-reverse;
         gap: 60px !important;
         position: relative;
     }
@@ -1558,9 +1576,41 @@ ul {
     }
 
     .rita-in-your-hands-left-cta {
-        display: flex;
+        display: none;
         align-items: center;
         justify-content: center;
+    }
+
+    .rita-in-your-hands-left-mobile-cta{
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center;
+        justify-content: center;
+        gap: 0px;
+    }
+
+    .rita-in-your-hands-left-m-cta-left{
+        display: flex !important;
+        align-items: center;
+        padding: 20px 30px;
+        background-color: var(--lemon-color);
+        border-radius: 50px;
+    }
+
+    .rita-in-your-hands-left-m-cta-left p{
+        font-family: "General Sans Medium";
+    }
+    
+    .rita-in-your-hands-left-m-cta-right p{
+        font-family: "General Sans Medium";
+    }
+     .rita-in-your-hands-left-m-cta-right{
+        margin: 30px 0 !important;
+        display: flex !important;
+        align-items: center;
+        padding: 20px 30px;
+        border: solid 1px var(--ligth-purple-color);
+        border-radius: 50px;
     }
 
     .rita-in-your-hands-left-cta-left {
@@ -1600,8 +1650,9 @@ ul {
     }
 
     .valuable-data-container-right h1 {
-        font-size: 35px;
+        font-size: 32px;
         padding: 0 20px;
+        text-align: center;
     }
 
     .valuable-data-container-right p {
@@ -1609,13 +1660,14 @@ ul {
         color: var(--dark-gray-color);
         padding: 0 20px;
         font-size: 20px;
+        text-align: center;
     }
 
     .valuable-data-container-bottom {
         display: flex;
         align-items: center;
         padding: 0 0px;
-        flex-direction: column-reverse;
+        flex-direction: column;
         margin-top: 30px;
     }
 
@@ -1631,10 +1683,16 @@ ul {
     .how-work-section-header h1 {
         text-align: center;
         font-family: "General Sans Semibold";
-        font-size: 45px;
+        font-size: 28px;
         line-height: 15px;
         color: var(--ligth-purple-color);
     }
+
+    .how-work-section-header p {
+        padding: 0 20px;
+        font-size: 16px !important;
+    }
+
 
     .how-work-section-content .phone {
         position: absolute;
@@ -1650,7 +1708,7 @@ ul {
     .how-work-section-content-items {
         background-color: var(--ligth-purple-color);
         border: solid 2px var(--pink-color);
-        width: 340px;
+        width: 100%;
         border-radius: 32px;
         margin-top: 50px;
         z-index: 1;
@@ -1680,12 +1738,12 @@ ul {
     }
 
     .safe-personal-information h1 {
-        font-size: 45px;
+        font-size: 28px;
         font-family: "General Sans Medium";
-        text-align: center;
         color: var(--ligth-purple-color);
         width: 100%;
         text-transform: capitalize;
+        text-align: left;
     }
 
     .safe-personal-information-assurance {
@@ -1694,11 +1752,33 @@ ul {
         justify-content: space-between;
         gap: 40px;
         flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .safe-personal-information-assurance-content{
+        width: 100%;
+        margin-left: -20px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
     }
 
     .safe-personal-information-assurance-content h5 {
-        line-height: 40px;
+        line-height: 20px;
+        font-size: 22px;
+        font-family: "General Sans Medium";
     }
+    
+    .safe-personal-information-assurance-content p {
+        font-size: 16px;
+    }
+
+    .safe-personal-information-assurance-content p {
+        text-align: left;
+    }
+
+
+
 
     .faq-section-flex {
         padding: 0 20px;
@@ -1710,10 +1790,12 @@ ul {
     .faq-section-flex-left p {
         text-transform: uppercase;
         color: var(--ligth-purple-color);
+        text-align: center;
     }
 
     .faq-section-flex-left h1 {
-        font-size: 40px;
+        font-size: 28px;
+        text-align: center;
     }
 
     .faq-section-flex-right {
@@ -1731,12 +1813,34 @@ ul {
         font-size: 20px !important;
     }
 
+    .main-footer-logo{
+        width: 100%;
+    }
 
     .main-footer-flex {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
         padding: 50px 20px;
+        gap: 20px;
         justify-content: space-between;
+    }
+
+    .footer-company-links h2{
+        font-size: 24px;
+        font-family: "General Sans Medium" !important;
+        font-weight: 500 !important;
+        color: #FEFBF5;
+    }
+
+    .footer-company-links.cta{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .footer-bottom{
+        padding: 20px;
     }
 
     /* Testimonial Section */
@@ -1747,7 +1851,7 @@ ul {
     }
 
     .testimonial-sections-header h1 {
-        font-size: 50px;
+        font-size: 24px;
         line-height: 60px;
     }
 
