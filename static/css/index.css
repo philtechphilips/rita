@@ -873,14 +873,26 @@ ul {
 
 .accordion-bottom {
     border-left: solid 2px var(--ligth-purple-color);
-    transition: 0.5s;
+    transition: 0.8s;
     height: 0;
     overflow: hidden;
+    opacity: 1;
+    padding: 0px 20px;
 }
+
+@keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 
 .accordion.active .accordion-bottom {
     height: fit-content;
     padding: 10px 20px;
+    animation: fade 0.5s;
 }
 
 /* Faq Section Ends here */
