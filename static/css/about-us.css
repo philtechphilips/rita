@@ -59,7 +59,7 @@
 
 .backed-industry-leaders {
     position: relative;
-    padding-top: 200px;
+    padding: 200px 0;
     z-index: 10;
 }
 
@@ -67,7 +67,7 @@
     position: absolute;
     top: 70px;
     left: 110px;
-    z-index: 0;
+    z-index: -1 !important;
 }
 
 .backed-industry-leaders h1 {
@@ -76,6 +76,7 @@
     padding: 0 400px;
     text-align: center;
     line-height: 80px;
+    z-index: 100 !important;
 }
 
 .leaders-details {
@@ -280,7 +281,9 @@
      }
     
      .backed-industry-leaders-hemisphere{
-        display: none;
+        display: block !important;
+        width: 200px;
+        left: 0;
      }
     
      .backed-industry-leaders h1{
@@ -294,16 +297,17 @@
      .leaders-details{
         display: flex;
         align-items: center;
+        flex-direction: row !important;
         flex-wrap: wrap;
         justify-content: center;
-        padding: 0 20px;
-        gap: 24px;
+        padding: 0 0px !important;
+        gap: 12px !important;
         z-index: 10 !important;
      }
     
-     /* .single-leaders-details .user-profile-image{
-        width: 300px;
-     } */
+     .single-leaders-details .user-profile-image{
+        width: 170px !important;
+     }
     
      .single-leaders-details{
         position: relative;
@@ -311,13 +315,14 @@
     
      .leaders-name-background{
         position: absolute;
-        bottom: 5px;
-        left: 0;
+        bottom: 4px !important;
+        left: 0px !important;
+        width: 150px;
      }
     
      .leaders-name{
         position: absolute;
-        bottom: 5px;
+        bottom: 0px !important;
         left: 20px;
         color: #FFFFFF;
      }
@@ -353,12 +358,21 @@
 
 @media (max-width: 640px) {
     .header-content-title h1 {
-        font-size: 40px;
+        display: block !important;
+        font-size: 32px;
+        margin-bottom: 40px;
         font-family: "General Sans Semibold" !important;
     }
 
+    .header-content-title .about-us-text{
+        display: block !important;
+        margin-bottom: 5px;
+    }
+
     .header-content-title .p-25-500 {
-        padding: 20px 0px !important;
+        display: block !important;
+        margin-top: 0;
+        padding: 10px 0px !important;
         font-size: 20px;
     }
 
@@ -385,20 +399,19 @@
     }
 
     .about-us-container-flex h1 {
-        font-size: 35px;
+        font-size: 24px;
         color: var(--ligth-purple-color);
         font-family: "General Sans Medium";
-        line-height: 60px;
+        line-height: 40px;
         width: 100%;
-        text-align: center;
     }
 
     .about-us-container-flex p {
         color: var(--ligth-purple-color);
         margin-top: -40px;
         width: 100%;
-        text-align: center;
-        font-size: 22px;
+        font-size: 16px;
+        z-index: 10;
     }
 
     .about-us-container-image-illustration {
@@ -426,11 +439,14 @@
     }
 
     .backed-industry-leaders h1 {
-        font-size: 40px;
+        font-size: 28px;
         color: var(--ligth-purple-color);
-        padding: 0 0px;
+        text-transform: capitalize;
+        padding: 0 20px;
         text-align: center;
-        line-height: 60px;
+        line-height: 40px;
+        font-family: "General Sans Semibold";
+
     }
 
     .leaders-details {
@@ -489,13 +505,16 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
-    padding: 60px 0;
-    display: none;
+    padding: 40px 0;
 }
 
 
 .about-us-our-story-container{
     padding: 40px 20px;
+}
+
+.about-us-our-story-container p{
+    font-size: 18px !important;
 }
 
 .about-us-our-story-container h1{
@@ -521,8 +540,9 @@
 }
 
 .about-us-our-story-container-flex-right p, .about-us-our-story-container-flex-left p {
-    font-size: 18px;
+    font-size: 18px !important;
     color: var(--ligth-purple-color);
+    line-height: 30px;
 }
 
 .absolute_one{
