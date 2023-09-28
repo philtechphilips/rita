@@ -171,10 +171,11 @@
     gap: 10px;
     margin-top: -10px !important;
     margin-left: -30px;
+    align-items: flex-start;
 }
 
 .policy-terms li img{
-    align-items: flex-start;
+    margin-top: 20px;
 }
 
 .policy-terms-sub-heading{
@@ -186,6 +187,7 @@
     position: absolute;
     bottom: 40px;
     left: 40px;
+    z-index: 0;
 }
 
 .ellipse-top-privacy-terms{
@@ -193,12 +195,14 @@
     top: 40px;
     left: 0;
     z-index: 0;
+    display: none;
 }
 
 .star-bottom-rigt-privacy-terms{
     position: absolute;
     bottom: 40px;
     right: 40px;
+    z-index: 0;
 }
 
 @media (max-width: 900px) {
@@ -239,4 +243,11 @@
     width: 100%;
 }
 
+.shapes-bottom-left-privacy-terms{
+    position: absolute;
+    bottom: 40px;
+    left: 30px;
+    z-index: 0;
+    width: 100px;
+}
 }
