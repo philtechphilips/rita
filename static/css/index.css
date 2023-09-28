@@ -74,7 +74,7 @@ body {
     /* overflow-x: hidden; */
 }
 
-html{
+html {
     scroll-behavior: smooth !important;
 }
 
@@ -230,7 +230,7 @@ ul {
     align-items: center;
     gap: 8px;
     border-radius: 50px;
-    padding: 1px 40px;
+    padding: 5px 40px;
     border: solid 1px var(--ligth-purple-color);
     z-index: 1;
     transition: ease-in-out;
@@ -1477,7 +1477,7 @@ ul {
         width: 250px !important;
     }
 
-    .product-hunt-left img{
+    .product-hunt-left img {
         width: 40px;
     }
 
@@ -1515,7 +1515,7 @@ ul {
         display: none;
     }
 
-    .header-content-title .mobile-text{
+    .header-content-title .mobile-text {
         display: block !important;
         font-size: 18px !important;
         color: #503658;
@@ -1536,12 +1536,12 @@ ul {
         box-shadow: 0px 2px rgba(0, 0, 0, 0.06);
     }
 
-    .header-content-button-mobile p{
+    .header-content-button-mobile p {
         color: var(--ligth-purple-color);
         font-size: 18px !important;
     }
 
-    .product-hunt-right-red{
+    .product-hunt-right-red {
         font-size: 16px;
     }
 
@@ -1581,7 +1581,7 @@ ul {
         justify-content: center;
     }
 
-    .rita-in-your-hands-left-mobile-cta{
+    .rita-in-your-hands-left-mobile-cta {
         display: flex !important;
         flex-direction: column !important;
         align-items: center;
@@ -1589,7 +1589,7 @@ ul {
         gap: 0px;
     }
 
-    .rita-in-your-hands-left-m-cta-left{
+    .rita-in-your-hands-left-m-cta-left {
         display: flex !important;
         align-items: center;
         padding: 20px 30px;
@@ -1597,14 +1597,15 @@ ul {
         border-radius: 50px;
     }
 
-    .rita-in-your-hands-left-m-cta-left p{
+    .rita-in-your-hands-left-m-cta-left p {
         font-family: "General Sans Medium";
     }
-    
-    .rita-in-your-hands-left-m-cta-right p{
+
+    .rita-in-your-hands-left-m-cta-right p {
         font-family: "General Sans Medium";
     }
-     .rita-in-your-hands-left-m-cta-right{
+
+    .rita-in-your-hands-left-m-cta-right {
         margin: 30px 0 !important;
         display: flex !important;
         align-items: center;
@@ -1755,7 +1756,7 @@ ul {
         padding: 0 20px;
     }
 
-    .safe-personal-information-assurance-content{
+    .safe-personal-information-assurance-content {
         width: 100%;
         margin-left: -20px;
         display: flex;
@@ -1768,7 +1769,7 @@ ul {
         font-size: 22px;
         font-family: "General Sans Medium";
     }
-    
+
     .safe-personal-information-assurance-content p {
         font-size: 16px;
     }
@@ -1813,7 +1814,7 @@ ul {
         font-size: 20px !important;
     }
 
-    .main-footer-logo{
+    .main-footer-logo {
         width: 100%;
     }
 
@@ -1825,21 +1826,21 @@ ul {
         justify-content: space-between;
     }
 
-    .footer-company-links h2{
+    .footer-company-links h2 {
         font-size: 24px;
         font-family: "General Sans Medium" !important;
         font-weight: 500 !important;
         color: #FEFBF5;
     }
 
-    .footer-company-links.cta{
+    .footer-company-links.cta {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 100%;
     }
 
-    .footer-bottom{
+    .footer-bottom {
         padding: 20px;
     }
 
