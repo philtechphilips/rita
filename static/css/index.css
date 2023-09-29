@@ -1587,10 +1587,20 @@ ul {
     }
 
     .header-content-title h1 {
-        font-size: 40px;
+        font-size: 0px !important;
         font-weight: 600;
         height: 100px !important;
         display: none;
+        height: 0px !important;
+    }
+
+    span.typed-cusor{
+        display: none !important;
+    }
+    .typing-text-effect{
+        display: none !important;
+        height: 0px !important;
+        visibility: hidden !important;
     }
 
     .header-content-title h2 {

@@ -151,7 +151,8 @@
       </a>
 
       <div class="header-content-title">
-        <h1 data-aos="fade-in" data-aos-delay="400" data-aos-duration="1000" style="height: 300px;">Earn from your <span class="typing-text-effect"></span></h1>
+        <h1 data-aos="fade-in" data-aos-delay="400" data-aos-duration="1000">Earn from your <br> <span class="typing-text-effect"></span></h1>
+        <!-- <h1 data-aos="fade-in" data-aos-delay="600" data-aos-duration="1000" style="margin-top: -50px; height: 150px;"  class="typing-text-effect"></h1> -->
         <h2 data-aos="fade-in" style="display: none;" data-aos-delay="400" data-aos-duration="1000" style="height: 300px;">Earn from your clicks, swipes, data.</h2>
         <p class="p-25-500" data-aos="fade-in" data-aos-delay="500" data-aos-duration="1000">Learn from your online activity, take control your data and start earning.</p>
         <p class="mobile-text" style="display: none;" data-aos="fade-in" data-aos-delay="500" data-aos-duration="1000">Track your online behaviour, take control and start earning.</p>
@@ -696,17 +697,19 @@
         pTag.textContent = trimmedText;
       }
     });
+
+
   </script>
   <!-- Get Year Dynamically ends here -->
 
   <!-- Typing Text Effect Starts Here -->
   <script>
-    const typed = new Typed(".typing-text-effect", {
-      strings: ["Online activity.", "clicks.", "swipes.", "data."],
-      typeSpeed: 150,
-      backSpeed: 150,
-      loop: true,
-    })
+  const typed = new Typed(".typing-text-effect", {
+    strings: ["Online activity.", "clicks.", "swipes.", "data."],
+    typeSpeed: 150,
+    backSpeed: 150,
+    loop: true,
+  });
   </script>
   <!-- Typing Text Effect Ends Here -->
 </body>
