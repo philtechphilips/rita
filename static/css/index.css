@@ -407,16 +407,18 @@ ul {
 .rita-in-your-hands-left h1 {
     text-transform: capitalize;
     font-size: 65px;
-    font-weight: 600;
+    font-weight: 600 !important;
     font-family: "General Sans Semibold";
+    color: var(--ligth-purple-color);
 }
 
 .rita-in-your-hands-left p {
     margin: -50px 0;
+    color: var(--ligth-purple-color);
 }
 
 .rita-in-your-hands-left-bottom-text {
-    color: var(--deep-purple-color);
+    color: #49454A !important;
 }
 
 .rita-in-your-hands-right {
@@ -449,7 +451,14 @@ ul {
 .rita-in-your-hands-left-cta a {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
+}
+
+.rita-in-your-hands-left-cta a p{
+   color: #4D3454 !important;
+   font-weight: 500;
+   /* font-family: "General Sans Semibold";
+   font-size: 16px !important; */
 }
 
 .rita-in-your-hands-left-cta-left {
