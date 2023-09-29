@@ -29,5 +29,35 @@ for (let i = 0; i < navLinks.length; i++) {
 
 
 
+const blogMenu = document.querySelector('.blog-menu');
+const blogDropdown = document.querySelector('.blog-dropdown');
+
+// Track whether the mouse is inside the blog menu or dropdown
+let isMouseInsideMenu = false;
+let isMouseInsideDropdown = false;
+
+blogMenu.addEventListener('mouseenter', () => {
+  isMouseInsideMenu = true;
+  blogDropdown.style.display = 'flex';
+});
+
+blogMenu.addEventListener('mouseleave', () => {
+  isMouseInsideMenu = false;
+  if (!isMouseInsideDropdown) {
+    blogDropdown.style.display = 'none';
+  }
+});
+
+blogDropdown.addEventListener('mouseenter', () => {
+  isMouseInsideDropdown = true;
+  blogDropdown.style.display = 'flex';
+});
+
+blogDropdown.addEventListener('mouseleave', () => {
+  isMouseInsideDropdown = false;
+  if (!isMouseInsideMenu) {
+    blogDropdown.style.display = 'none';
+  }
+});
 
 

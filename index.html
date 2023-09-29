@@ -66,7 +66,7 @@
             </a>
           </li>
           <li class="nav-links-item blog-menu">
-            <a href="https://medium.com/@rita_personal_data">
+            <a href="javascript:void(0)">
               Blog
             </a>
             <div class="blog-dropdown">
@@ -585,38 +585,6 @@
   <!-- AOS -->
   <!-- Get Year Dynamically -->
   <script>
-   const blogMenu = document.querySelector('.blog-menu');
-const blogDropdown = document.querySelector('.blog-dropdown');
-
-// Track whether the mouse is inside the blog menu or dropdown
-let isMouseInsideMenu = false;
-let isMouseInsideDropdown = false;
-
-blogMenu.addEventListener('mouseenter', () => {
-  isMouseInsideMenu = true;
-  blogDropdown.style.display = 'flex';
-});
-
-blogMenu.addEventListener('mouseleave', () => {
-  isMouseInsideMenu = false;
-  if (!isMouseInsideDropdown) {
-    blogDropdown.style.display = 'none';
-  }
-});
-
-blogDropdown.addEventListener('mouseenter', () => {
-  isMouseInsideDropdown = true;
-  blogDropdown.style.display = 'flex';
-});
-
-blogDropdown.addEventListener('mouseleave', () => {
-  isMouseInsideDropdown = false;
-  if (!isMouseInsideMenu) {
-    blogDropdown.style.display = 'none';
-  }
-});
-
-
     const currentYear = new Date().getFullYear();
     const copyrightNotice = document.getElementById('copyright');
     copyrightNotice.textContent = `© Rita Personal Data BV ${currentYear} • Van Trierstraat 40, 2018 Antwerpen.`;
