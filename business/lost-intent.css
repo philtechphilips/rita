@@ -1,0 +1,175 @@
+@font-face {
+  font-family: "Telegraf";
+  src: url("/static/fonts/PPTelegraf-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Inter", "serif";
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.mobile-warning {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .mobile-warning {
+    display: flex;
+    justify-content: center; /* for horizontal centering */
+    align-items: center; /* for vertical centering */
+    height: 100vh; /* or any other height you want */
+  }
+
+  /* Hide other components when displaying on mobile */
+  .container > *:not(.mobile-warning) {
+    display: none;
+  }
+}
+
+.header,
+.footer {
+  height: 100px;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.header {
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.footer {
+  border-top: 1px solid #e8e8e8;
+  justify-content: space-between;
+}
+
+.main {
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  gap: 16px;
+  overflow: hidden;
+}
+
+.page1 {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  gap: 32px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.headerText {
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  text-align: center;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  -webkit-box-pack: end;
+  justify-content: end;
+  gap: 16px;
+  padding: 0px 24px;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  -webkit-box-align: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.formBody {
+  width: fit-content;
+  padding: 0px 24px;
+  overflow: auto;
+}
+
+.logo {
+  height: 50px; /* or whatever height you want */
+  width: auto; /* to keep the aspect ratio */
+  margin-right: 20px; /* Add some space between the logo and header text */
+  vertical-align: bottom; /* Align the logo to the bottom */
+}
+
+.company-name {
+  font-size: 42px; /* Adjust as needed */
+  font-weight: bold; /* Makes the text bold */
+  color: rgba(26, 11, 92, 0.85);
+  margin-top: 10px;
+}
+
+.circle-active,
+.circle-disactive {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle-active {
+  background-color: #5455e5;
+}
+
+.circle-disactive {
+  background-color: white;
+  border-color: gray;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.circle-text-active {
+  color: white;
+}
+
+.circle-text-disactive {
+  color: gray;
+}
+
+.steps-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.steps {
+  background-color: #5359d5;
+}
+
+.x-button {
+  display: none;
+}
+
+.company-box:hover .x-button {
+  display: block; /* Show the child when parent is hovered */
+}
