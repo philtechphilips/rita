@@ -126,7 +126,7 @@
 
 @media (max-width: 600px){
     .header{
-        height: 420px !important;
+        height: 450px !important;
     }
 
     .knowledge-base-section-container{
@@ -146,7 +146,7 @@
 
     .header-content-title p{
         display: flex !important;
-        margin-top: -40px;
+        margin-top: 0px;
         font-size: 18px !important;
     }
 
