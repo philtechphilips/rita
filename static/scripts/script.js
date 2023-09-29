@@ -31,6 +31,8 @@ for (let i = 0; i < navLinks.length; i++) {
 
 const blogMenu = document.querySelector('.blog-menu');
 const blogDropdown = document.querySelector('.blog-dropdown');
+const arrowdown = document.querySelector('.ri-arrow-down-s-line');
+const arrowup = document.querySelector('.ri-arrow-up-s-line');
 
 // Track whether the mouse is inside the blog menu or dropdown
 let isMouseInsideMenu = false;
@@ -39,24 +41,32 @@ let isMouseInsideDropdown = false;
 blogMenu.addEventListener('mouseenter', () => {
   isMouseInsideMenu = true;
   blogDropdown.style.display = 'flex';
+  arrowdown.style.display = 'none'
+  arrowup.style.display = 'flex'
 });
 
 blogMenu.addEventListener('mouseleave', () => {
   isMouseInsideMenu = false;
   if (!isMouseInsideDropdown) {
     blogDropdown.style.display = 'none';
+    arrowup.style.display = 'none'
+    arrowdown.style.display = 'flex'
   }
 });
 
 blogDropdown.addEventListener('mouseenter', () => {
   isMouseInsideDropdown = true;
   blogDropdown.style.display = 'flex';
+  arrowdown.style.display = 'none'
+  arrowup.style.display = 'flex'
 });
 
 blogDropdown.addEventListener('mouseleave', () => {
   isMouseInsideDropdown = false;
   if (!isMouseInsideMenu) {
     blogDropdown.style.display = 'none';
+    arrowup.style.display = 'none'
+    arrowdown.style.display = 'flex'
   }
 });
 

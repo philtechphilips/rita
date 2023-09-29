@@ -253,8 +253,11 @@ ul {
     font-size: 14px;
     font-weight: 500;
     font-family: "General Sans Medium";
-    border-bottom: dashed 1px var(--dark-gray-color);
     padding: 15px 0;
+}
+
+.blog-dropdown .blog-dropdown-link{
+    border-bottom: dashed 1px var(--dark-gray-color);
 }
 
 .blog-dropdown a:hover{

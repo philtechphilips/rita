@@ -1,3 +1,65 @@
+@charset "UTF-8";
+
+/* general-sans - latin */
+@font-face {
+    font-family: 'General Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('General Sans Regular'), local('General-San-Regular'),
+        url('../fonts/GeneralSans-Regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/GeneralSans-Regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'General Sans Medium';
+    font-style: normal;
+    font-weight: 500;
+    src: local('General Sans Medium'), local('General-San-Medium'),
+        url('../fonts/GeneralSans-Medium.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/GeneralSans-Medium.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'General Sans Semibold';
+    font-style: normal;
+    font-weight: 600;
+    src: local('General Sans Semibold'), local('General-San-Bold'),
+        url('../fonts/GeneralSans-Semibold.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/GeneralSans-Semibold.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-display: swap;
+}
+
+
+@font-face {
+    font-family: 'General Sans Bold';
+    font-style: normal;
+    font-weight: 700;
+    src: local('General Sans Bold'), local('General-San-Bold'),
+        url('../fonts/GeneralSans-Bold.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/GeneralSans-Bold.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    font-display: swap;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "General Sans", sans-serif;
+    /* box-sizing: border-box; */
+    /* overflow-x: hidden; */
+}
+
+
 .question-section{
     width: 100%;
     display: flex;
@@ -17,6 +79,13 @@
     align-items: center;
     justify-content: space-between;
 }
+
+.question-section-container-items h5{
+    font-size: 14px !important;
+    font-family: "General Sans" !important;
+    font-weight: 600 !important;
+}
+
 
 .question-section-container-content{
     display: flex;
@@ -44,6 +113,7 @@
     font-size: 14px;
     color: var(--dark-gray-color);
     margin-top: -10px;
+    font-family: "General Sans" !important;
 }
 
 .question-accrodion{
@@ -68,6 +138,7 @@
 .question-accrodion-bottom p{
     font-size: 14px;
     line-height: 25px;
+    font-family: "General Sans" !important;
 }
 
 .blog-detail-footer{
