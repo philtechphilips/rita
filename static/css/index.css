@@ -887,6 +887,7 @@ ul {
     padding: 0 100px;
     display: flex;
     align-items: flex-start;
+    gap: 100px;
 }
 
 .faq-section-flex-left p {
